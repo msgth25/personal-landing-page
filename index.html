@@ -247,6 +247,42 @@
       border: 1px solid rgba(15, 23, 42, 0.06);
       box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
     }
+
+    .feature-card {
+      background: linear-gradient(180deg, #ffffff 0%, #fcfaff 100%);
+      border: 1px solid rgba(139, 92, 246, 0.14);
+      border-radius: 22px;
+      padding: 1.4rem;
+    }
+
+    .feature-title {
+      margin-bottom: 0.35rem;
+      font-size: 1.2rem;
+    }
+
+    .feature-meta {
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .focus-list {
+      display: grid;
+      gap: 0.75rem;
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .focus-list li {
+      padding: 0.9rem 1rem;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid rgba(15, 23, 42, 0.06);
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
+      font-weight: 600;
+    }
     @media (max-width: 760px) {
       .page {
         width: min(100% - 1rem, 1080px);
@@ -296,16 +332,16 @@
     <section class="grid two-column">
       <article class="panel card">
         <h2>Education</h2>
-        <div class="timeline-item">
-          <h3>Ball State University</h3>
-          <div class="timeline-meta">Information systems, Information systems • 2024 - 2028</div>
+        <div class="feature-card">
+          <h3 class="feature-title">Ball State University</h3>
+          <div class="feature-meta">Information systems, Information systems • 2024 - 2028</div>
           <p>Recognized on LinkedIn with the skill badge for Office 365.</p>
         </div>
       </article>
 
       <article class="panel card">
         <h2>Professional Focus</h2>
-        <ul>
+        <ul class="focus-list">
           <li>Help desk support</li>
           <li>Troubleshooting across Windows, MacOS, Android, and iOS</li>
           <li>Computer hardware and workstation setup</li>
