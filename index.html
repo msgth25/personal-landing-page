@@ -11,8 +11,8 @@
       --surface-strong: #ffffff;
       --text: #1e293b;
       --muted: #5f6b7a;
-      --accent: #2563eb;
-      --accent-soft: #dbeafe;
+      --accent: #8b5cf6;
+      --accent-soft: #ede9fe;
       --border: rgba(15, 23, 42, 0.08);
       --shadow: 0 18px 48px rgba(15, 23, 42, 0.08);
     }
@@ -26,9 +26,9 @@
       font-family: "Trebuchet MS", "Segoe UI", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), transparent 30%),
-        radial-gradient(circle at top right, rgba(148, 163, 184, 0.18), transparent 35%),
-        linear-gradient(180deg, #eef4fb 0%, #f7f9fc 100%);
+        radial-gradient(circle at top left, rgba(139, 92, 246, 0.18), transparent 30%),
+        radial-gradient(circle at top right, rgba(216, 180, 254, 0.22), transparent 35%),
+        linear-gradient(180deg, #f5f0ff 0%, #fbf9ff 100%);
       min-height: 100vh;
     }
 
@@ -48,13 +48,6 @@
 
     .hero {
       padding: 2.5rem;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.9fr);
-      gap: 2rem;
-      align-items: center;
     }
 
     h1,
@@ -115,7 +108,7 @@
       padding: 0.55rem 0.85rem;
       border-radius: 999px;
       background: var(--accent-soft);
-      color: #1d4ed8;
+      color: #6d28d9;
       font-weight: 700;
       font-size: 0.95rem;
     }
@@ -135,12 +128,12 @@
     .button {
       background: var(--accent);
       color: #ffffff;
-      box-shadow: 0 10px 22px rgba(37, 99, 235, 0.22);
+      box-shadow: 0 10px 22px rgba(139, 92, 246, 0.24);
     }
 
     .button-secondary {
       background: rgba(255, 255, 255, 0.85);
-      border: 1px solid rgba(37, 99, 235, 0.18);
+      border: 1px solid rgba(139, 92, 246, 0.2);
       color: var(--text);
     }
 
@@ -210,7 +203,7 @@
 
     .experience-card {
       background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
-      border: 1px solid rgba(37, 99, 235, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.14);
       border-radius: 22px;
       padding: 1.5rem;
     }
@@ -254,57 +247,6 @@
       border: 1px solid rgba(15, 23, 42, 0.06);
       box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
     }
-
-    .hero-side {
-      padding: 1.5rem;
-      border-radius: 22px;
-      background: linear-gradient(180deg, rgba(37, 99, 235, 0.08), rgba(255, 255, 255, 0.96));
-      border: 1px solid rgba(37, 99, 235, 0.12);
-    }
-
-    .hero-side-title {
-      margin-bottom: 1rem;
-      font-size: 1rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #1d4ed8;
-    }
-
-    .hero-side-list {
-      display: grid;
-      gap: 0.9rem;
-    }
-
-    .hero-side-item {
-      padding: 0.9rem 1rem;
-      border-radius: 16px;
-      background: rgba(255, 255, 255, 0.9);
-      border: 1px solid rgba(15, 23, 42, 0.06);
-    }
-
-    .hero-side-label {
-      margin-bottom: 0.2rem;
-      color: var(--muted);
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 700;
-    }
-
-    .hero-side-value {
-      color: var(--text);
-      font-size: 1.02rem;
-      font-weight: 700;
-    }
-
-    footer {
-      margin-top: 1.2rem;
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
     @media (max-width: 760px) {
       .page {
         width: min(100% - 1rem, 1080px);
@@ -321,10 +263,6 @@
         grid-template-columns: 1fr;
       }
 
-      .hero-grid {
-        grid-template-columns: 1fr;
-      }
-
       .experience-meta {
         text-align: left;
       }
@@ -334,49 +272,24 @@
 <body>
   <main class="page">
     <section class="panel hero">
-      <div class="hero-grid">
-        <div>
-          <h1>Marquis So</h1>
-          <div class="subtitle">Student at Ballstate</div>
-          <div class="location">United States</div>
-          <div class="school">Ball State University</div>
-          <ul class="hero-tags">
-            <li>Information Systems</li>
-            <li>Help Desk Support</li>
-            <li>Troubleshooting</li>
-          </ul>
-          <p class="summary">
-            I am an Information Systems student at Ball State University with experience in help desk
-            support, troubleshooting, computer hardware, and customer service. My background includes
-            front-line technical support for faculty, staff, and students, along with hands-on work
-            maintaining workstations and resolving device and software issues.
-          </p>
-          <div class="actions">
-            <a class="button" href="https://www.linkedin.com/in/marquis-so/" target="_blank" rel="noreferrer">View LinkedIn</a>
-            <a class="button-secondary" href="https://github.com/msgth25" target="_blank" rel="noreferrer">View GitHub</a>
-          </div>
-        </div>
-        <aside class="hero-side">
-          <div class="hero-side-title">Quick Snapshot</div>
-          <div class="hero-side-list">
-            <div class="hero-side-item">
-              <div class="hero-side-label">Education</div>
-              <div class="hero-side-value">2024 - 2028</div>
-            </div>
-            <div class="hero-side-item">
-              <div class="hero-side-label">Work Type</div>
-              <div class="hero-side-value">Part-time • On-site</div>
-            </div>
-            <div class="hero-side-item">
-              <div class="hero-side-label">Location</div>
-              <div class="hero-side-value">Muncie, Indiana, United States</div>
-            </div>
-            <div class="hero-side-item">
-              <div class="hero-side-label">Top Skills</div>
-              <div class="hero-side-value">Computer Repair, Office 365, Customer Service</div>
-            </div>
-          </div>
-        </aside>
+      <h1>Marquis So</h1>
+      <div class="subtitle">Student at Ballstate</div>
+      <div class="location">United States</div>
+      <div class="school">Ball State University</div>
+      <ul class="hero-tags">
+        <li>Information Systems</li>
+        <li>Help Desk Support</li>
+        <li>Troubleshooting</li>
+      </ul>
+      <p class="summary">
+        I am an Information Systems student at Ball State University with experience in help desk
+        support, troubleshooting, computer hardware, and customer service. My background includes
+        front-line technical support for faculty, staff, and students, along with hands-on work
+        maintaining workstations and resolving device and software issues.
+      </p>
+      <div class="actions">
+        <a class="button" href="https://www.linkedin.com/in/marquis-so/" target="_blank" rel="noreferrer">View LinkedIn</a>
+        <a class="button-secondary" href="https://github.com/msgth25" target="_blank" rel="noreferrer">View GitHub</a>
       </div>
     </section>
 
@@ -443,9 +356,6 @@
       </ul>
     </section>
 
-    <footer>
-      Based only on publicly shared LinkedIn details shown in the provided screenshots.
-    </footer>
   </main>
 </body>
 </html>
